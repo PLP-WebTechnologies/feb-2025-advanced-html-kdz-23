@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    <form action="/submit" method="POST">
+
+        <!-- Name Field -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Create a password" required><br><br>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Dropdown Field -->
+        <label for="country">Select Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="">Please select a country</option>
+            <option value="usa">Kenya</option>
+            <option value="uk">Tanzania</option>
+            <option value="canada">Nigeria</option>
+            <option value="india">South Africa</option>
+        </select><br><br>
+
+        <!-- Radio Buttons (Gender) -->
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label><br><br>
+        </fieldset>
+
+        <!-- Checkboxes (Interests) -->
+        <fieldset>
+            <legend>Interests:</legend>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label><br><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Register">
+
+    </form>
+
+    <!-- Link Back to Index Page -->
+    <p><a href="index.html">Back to Home</a></p>
+
+</body>
+</html>
